@@ -28,13 +28,14 @@ function renderizarExtrato() {
         `;
     }
     if (htmlRegistroTransacoes === "") {
-        htmlRegistroTransacoes = "<div>Não há transações registradas.</div>";
+        htmlRegistroTransacoes =
+            "<div>Não há transações registradas até o momento.</div>";
     }
     elementoRegistroTransacoesExtrato.innerHTML = htmlRegistroTransacoes;
 }
 const ExtratoComponent = {
     atualizar() {
         renderizarExtrato();
-    }
+    },
 };
 export default ExtratoComponent;
